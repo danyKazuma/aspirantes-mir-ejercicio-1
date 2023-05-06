@@ -1,9 +1,13 @@
-Nombre de los estudiantes del curso:
-Andres
-Esneider Sepulveda
-Jhon Rengifo
-Monica
-Oscar Achury
-Oscar G Rubiano
-Patricia Torres
-Rafael Arteaga
+Comandos utilizados para el ejercicio 1;
+- pwd
+- mkdir ejercicios
+- cd ejercicios
+- code
+- git config --global user.name "danyKazuma"
+- git config --global user.email daniel.chavez.pimentel@gmail.com
+- git init
+- git add .
+- git commit -m "Version Inicial"
+- git remote add origin git@github.com:danyKazuma/aspirantes-mir-ejercicio-1.git
+- git branch -M main
+- git push -u origin main
