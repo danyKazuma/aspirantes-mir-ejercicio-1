@@ -1,0 +1,57 @@
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4
+$ git clone git@github.com:danyKazuma/aspirantes-mir-ejercicio-1.git
+Cloning into 'aspirantes-mir-ejercicio-1'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 12 (delta 1), reused 11 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (1/1), done.
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4
+$ cd aspirantes-mir-ejercicio-1/
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (main)
+$ git checkout -b nueva-funcionalidad
+Switched to a new branch 'nueva-funcionalidad'
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (nueva-funcionalidad)
+$ ls
+ejercicio1/
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (nueva-funcionalidad)
+$ git add nuevo-archivo.txt
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (nueva-funcionalidad)
+$ git commit -m "Agregado nuevo archivo para la nueva funcionalidad"
+[nueva-funcionalidad 509e6f9] Agregado nuevo archivo para la nueva funcionalidad
+ 1 file changed, 1 insertion(+)
+ create mode 100644 nuevo-archivo.txt
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (nueva-funcionalidad)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (main)
+$ ls
+ejercicio1/
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (main)
+$ git merge nueva-funcionalidad
+Updating a874a17..509e6f9
+Fast-forward
+ nuevo-archivo.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 nuevo-archivo.txt
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (main)
+$ ls
+ejercicio1/  nuevo-archivo.txt
+
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (main)
+$ cat nuevo-archivo.txt
+System.out.println("Hola Mundo");
+Dany@DESKTOP-LNCCFMK MINGW64 ~/Desktop/ejercicio4/aspirantes-mir-ejercicio-1 (main)
+$
